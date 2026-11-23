@@ -1,0 +1,15 @@
+{
+  "name": "tayyipcanbay",
+  "description": "Pomodoro: a study desk for university students, run together with Claude.",
+  "owner": {
+    "name": "Tayyip Canbay",
+    "url": "https://tayyipcanbay.dev"
+  },
+  "plugins": [
+    {
+      "name": "pomodoro",
+      "source": "./plugins/pomodoro",
+      "description": "Connects Claude to your Pomodoro account and adds skills for setting up your studies, studying, focus sessions, weekly reviews and research."
+    }
+  ]
+}
