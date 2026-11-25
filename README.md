@@ -1,6 +1,6 @@
 # Pomodoro plugins for Claude
 
-A plugin marketplace for [Pomodoro](https://pomodoro-874230863057.europe-west1.run.app), a study desk for university students that works together with Claude.
+A plugin marketplace for [Pomodoro](https://pomodoro.tayyipcanbay.dev), a study desk for university students that works together with Claude.
 
 ## Install in Claude (web or desktop app)
 

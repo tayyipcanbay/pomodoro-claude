@@ -2,11 +2,11 @@
 
 Pomodoro is a study desk for university students. You plan and review your studies with Claude, and you run focus sessions on the website's timer. This plugin connects Claude to your Pomodoro account and teaches Claude how to use it well.
 
-Pomodoro is invite-only for now. You need an account at [the Pomodoro website](https://pomodoro-874230863057.europe-west1.run.app) before the connector can sign in.
+Pomodoro is invite-only for now. You need an account at [the Pomodoro website](https://pomodoro.tayyipcanbay.dev) before the connector can sign in.
 
 ## What's inside
 
-**Connector:** the Pomodoro MCP server at `https://pomodoro-874230863057.europe-west1.run.app/mcp`. Claude reads and changes your own courses, topics, notes, deadlines, projects, papers, focus sessions and log through it.
+**Connector:** the Pomodoro MCP server at `https://pomodoro.tayyipcanbay.dev/mcp`. Claude reads and changes your own courses, topics, notes, deadlines, projects, papers, focus sessions and log through it.
 
 **Skills:**
 
