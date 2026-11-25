@@ -1,37 +1,41 @@
-# Pomodoro for Claude
+# Pomodoro
 
-Pomodoro is a study desk for university students. You plan and review your studies with Claude, and you run focus sessions on the website's timer. This plugin connects Claude to your Pomodoro account and teaches Claude how to use it well.
+A study desk for university students, run together with Claude. You plan and review your studies in chat; you focus on the website's timer. Everything you and Claude write lands in one place, so the next conversation already knows where you are.
 
-Pomodoro is invite-only for now. You need an account at [the Pomodoro website](https://pomodoro.tayyipcanbay.dev) before the connector can sign in.
+**Live site:** [pomodoro.tayyipcanbay.dev](https://pomodoro.tayyipcanbay.dev) · invite-only for now.
 
-## What's inside
+## Install
 
-**Connector:** the Pomodoro MCP server at `https://pomodoro.tayyipcanbay.dev/mcp`. Claude reads and changes your own courses, topics, notes, deadlines, projects, papers, focus sessions and log through it.
+1. In Claude, open **Customize → Plugins → Add marketplace**, enter `tayyipcanbay/pomodoro-claude`, then install **Pomodoro**. In Claude Code: `/plugin install pomodoro@tayyipcanbay` after adding the marketplace.
+2. Open the plugin's **Connectors** tab and choose **Connect**.
+3. Sign in with the Google account you use on the site, and allow access.
+4. In any chat, say: *"Use Pomodoro: show my overview."*
 
-**Skills:**
+You need a Pomodoro account first — it's invite-only. Ask for one, or request access from the site.
 
-| Skill | Use it for |
-|---|---|
-| `study-setup` | Setting up your account from your transcript, module handbook and timetable, and moving notes in from Notion or PDFs |
-| `study-coach` | Deciding what to study, lecture notes, hint-first exercise help, mock exams, topic mastery |
-| `focus-sessions` | Planning focus sessions onto the timer and logging them afterwards |
-| `weekly-review` | A weekly look at time studied, mastery and deadlines, and planning the next week |
-| `research-companion` | Research projects and theses: milestones, papers, experiments, supervisor meetings |
+## The skills
 
-## Getting started
+These switch on by themselves when they fit. You never name a skill; you just ask.
 
-1. Install the plugin. In Claude, open **Customize → Plugins → Add marketplace**, enter `tayyipcanbay/pomodoro-claude`, then install **Pomodoro**. In Claude Code, run `/plugin install pomodoro --marketplace tayyipcanbay/pomodoro-claude`.
-2. Open the plugin's **Connectors** tab and select **Connect**.
-3. Sign in with the Google account you use for Pomodoro and allow access.
-4. Ask Claude: "Set up my studies" and share your transcript or module handbook.
+| Skill | What it does | Try saying |
+|---|---|---|
+| **study-setup** | Builds your account from a transcript, module handbook or timetable, and moves notes in from Notion or PDFs | *"Set up my semester: I study … and take … this term."* |
+| **study-coach** | Picks what to study next, writes lecture notes, tutors exercises hint by hint, runs mock exams, tracks mastery | *"What should I study now?"* · *"Quiz me on Runge–Kutta."* |
+| **focus-sessions** | Plans sessions onto the timer with concrete goals, then checks in and logs them | *"Plan my study day: 3 hours, exam topics first."* |
+| **weekly-review** | Reviews your week — time studied, mastery, deadlines — and plans the next one honestly | *"How's my semester going? Review it and plan next week."* |
+| **research-companion** | Runs a thesis or research project: milestones, a paper library, experiments, supervisor-meeting briefs | *"Set up my research project with milestones to the deadline."* |
+
+## What Claude can touch
+
+Through the connector, Claude reads and changes **only your own** data: your profile, courses, topics (with spaced-repetition mastery), notes, deadlines, projects, milestones, papers, experiments, focus sessions and log. It can't see anyone else's, and it never marks your goals done for you — you do that on the timer.
 
 ## Data and privacy
 
-- The plugin contains no code that runs on your computer. It holds the connector address and five instruction files (skills).
-- When Claude uses a Pomodoro tool, Claude sends the tool's inputs (for example a note's text or a session's goals) to the Pomodoro server, which stores them in your account. Nothing is sent anywhere else.
-- Sign-in uses OAuth 2.1 with PKCE. Pomodoro stores only hashes of access tokens. Access tokens last one hour.
-- You can see and revoke Claude's access under **Settings → Connected apps** on the website, download all your data, or delete your account there.
+- The plugin runs no code on your computer. It holds the connector's address and five instruction files (the skills).
+- When Claude uses a Pomodoro tool, it sends that tool's inputs — a note's text, a session's goals — to the Pomodoro server, which stores them in your account. Nothing goes anywhere else.
+- Sign-in uses OAuth 2.1 with PKCE. The server stores only hashes of access tokens; access tokens last one hour.
+- On the site, **Settings → Connected apps** lets you see and revoke Claude's access, download all your data, or delete your account.
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+MIT — see [LICENSE](LICENSE).
