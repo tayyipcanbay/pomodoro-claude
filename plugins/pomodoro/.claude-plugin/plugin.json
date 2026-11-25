@@ -1,7 +1,7 @@
 {
   "name": "pomodoro",
   "displayName": "Pomodoro",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Connects Claude to your Pomodoro account and adds skills for setting up your studies, studying, focus sessions, weekly reviews and research.",
   "author": {
     "name": "Tayyip Canbay",
